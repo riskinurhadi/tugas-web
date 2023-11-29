@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    background-image: url('./images/6535dbe469d97-kereta-api-melintasi-jalur-ka-sentolo-wates_1265_711.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 270px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(103, 103, 226);
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(103, 103, 226);
+}
+
+h3{
+    font-size: 20px;
+    font-weight:;
+    color: rgb(255, 255, 255);
+}
+.about-us-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
