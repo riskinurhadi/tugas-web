@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman dengan Tailwind CSS</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Style untuk efek transparan navbar saat discroll ke atas */
+        .transparent-navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Style untuk menampilkan navbar saat discroll ke bawah */
+        .visible-navbar {
+            background-color: rgba(255, 255, 255, 1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Style untuk section hero dengan gambar */
+        .hero-section {
+            background: url('https://heritage.kai.id/media/BALAI%20YASA/Balai%20Yasa%20Yogyakarta/tampak%20depan%20BY%20Pengok.jpg') center/cover;
+            height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            /*filter: brightness(70%);*/
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="py-4 fixed w-full z-10 bg-transparent transition duration-500 ease-in-out text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <!-- Logo -->
+                <a href="#" class="text-lg font-bold">Logo</a>
+            </div>
+            <div>
+                <!-- Menu -->
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-red-700">Home</a></li>
+                    <li><a href="#" class="hover:text-red-700">About</a></li>
+                    <li><a href="#" class="hover:text-red-700">Services</a></li>
+                    <li><a href="#" class="hover:text-red-700">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1 class="text-4xl font-bold mb-4">Welcome to KAI BY YK</h1>
+            <p class="text-lg">Credit: KAI BY YK</p>
+        </div>
+    </section>
+
+    <!-- Content Body -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Hai</h1>
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-dark py-8 shadow">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <!-- Grid 1: Logo dan Alamat -->
+            <div class="container">
+                <img src="https://heritage.kai.id//web/users/hkai/img/logo/itlogo_baru.png" alt="Logo"
+                    class="w-40 h-20 mb-4">
+                <p>Penyedia informasi seputar tempat wisata, makanan, <br>dan berbagai keunikan lain, sebagai panduan kamu <br>
+                    ketika hendak berkunjung ke <br> Daerah Istimewa Yogyakarta.<br>
+                    <br>
+                    </p>
+            </div>
+
+            <!-- Grid 2: Kategori Website -->
+            <div class="container">
+                <h3 class="text-lg font-semibold mb-4">Kategori</h3>
+                <ul class="list-none">
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 1</a></li>
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 2</a></li>
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 3</a></li>
+                    <!-- Tambahkan kategori sesuai kebutuhan -->
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="text-lg font-semibold mb-4">Kategori</h3>
+                <ul class="list-none">
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 1</a></li>
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 2</a></li>
+                    <li><a href="#" class="text-dark-300 hover:text-red">Kategori 3</a></li>
+                    <!-- Tambahkan kategori sesuai kebutuhan -->
+                </ul>
+            </div>
+
+            
+
+        </div>
+    </footer>
+
+    <footer class="bg-white-100 text-dark py-8 shadow">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <p>&copy;2023, JogjaMedia</p>
+        </div>
+    </footer>
+    <!-- JavaScript untuk mengatur efek transparan navbar saat discroll -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('bg-white', 'text-black');
+                navbar.classList.remove('bg-transparent', 'text-white');
+            } else {
+                navbar.classList.remove('bg-white', 'text-black');
+                navbar.classList.add('bg-transparent', 'text-white');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
